@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Poppins:wght@700&display=swap');
+:root{
+    /* ### Primary*/
+--Lightred: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%);
+  /*  ## Gradients (BACKGROUND)*/
+  --Lightslateblue: hsl(252, 100%, 67%);
+--Lightroyalblue: hsl(241, 81%, 54%);
+ /*  ## Gradients (CIRCLE)*/
+--Violetblue : hsla(256, 72%, 46%, 1);
+--Persianblue: hsla(241, 72%, 46%, 0);
+/* ### Neutral */
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 26%, 65%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+/* ### Font */
+--Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk);
+--Weights: 500, 700, 800;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.box{
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+.contentblock{
+    min-height: 43vh;
+    background:linear-gradient(to bottom,var(--Lightslateblue),var(--Lightroyalblue));
+    padding: 1rem;
+    
+    border-radius: 0px 0px 30px 30px;
+    justify-content: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentblock > *{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.contentblock h1 , p{
+    text-align: center;
+    font-size: 18px;
+    color: var(--Lightlavender );
+}
+.circle{
+    position: relative;
+    display: grid;
+    margin: auto;
+    height: 20vh;
+}
+.circle::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    clip-path: circle(60px at center);
+    background:linear-gradient(to bottom,var(--Lightslateblue),var(--Lightroyalblue));
+    background-size: 50%;
+    
+}
+.circle h1{
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+    color: var(--White);
+}
+.circle h2{
+    position: absolute;
+    top: 80%;
+    left:50% ;
+    transform: translate(-50%,-70%);
+    text-align: center;
+    font-size: .9rem;
+    color: var(--Lightlavender);
+    
+}
+.contentblock p{
+    font-size: 1rem;
+}
+.contentblock .great{
+    padding: 10px 0px 5px 0px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--White);
+}
+.contentblock2{
+    background-color: var(--Paleblue);
+    height: 56vh;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.contentblock2 h2 {
+    font-size: 1.1rem;
+}
+.container{
+    height: 100%;
+    display: block;
+    position: relative;
+}
+.container .rectangle{
+    margin: 1rem 0 1rem 0;
+    background-color: hsl(0, 100%, 67%, .05);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.rectangle .reaction{
+    padding: 0px 0px 0px .5rem;
+    color: var(--Lightred);
+    font-size: 1rem;
+}
+.rectangle h5:nth-child(3){
+    margin-left:auto ;
+}
+
+.container .rectangle2{
+    margin: 1rem 0 1rem 0;
+    background-color:  hsl(39, 100%, 56%,.05) ;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.rectangle2 .reaction2{
+    padding: 0px 0px 0px .5rem;
+    color: var(--Orangeyyellow);
+    font-size: 1rem;
+}
+.rectangle2 h5:nth-child(3){
+    margin-left:auto ;
+}
+
+.container .rectangle3{
+    margin: 1rem 0 1rem 0;
+    background-color:   hsl(166, 100%, 37%, .05) ;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.rectangle3 .reaction3{
+    padding: 0px 0px 0px .5rem;
+    color: var(--Greenteal);
+    font-size: 1rem;
+}
+.rectangle3 h5:nth-child(3){
+    margin-left:auto ;
+}
+
+
+.container .rectangle4{
+    margin: 1rem 0 1rem 0;
+    background-color:  hsl(234, 85%, 45%, .05) ;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.rectangle4 .reaction4{
+    padding: 0px 0px 0px .5rem;
+    color: var(--Cobaltblue);
+    font-size: 1rem;
+}
+.rectangle4 h5:nth-child(3){
+    margin-left:auto ;
+}
+.container button{
+    width: 100%;
+    padding: .9rem;
+    border-radius: 40px;
+    font-weight: 800;
+    background-color: var(--Darkgrayblue);
+    color: var(--Paleblue);
+    font-size: 1rem;
+}
